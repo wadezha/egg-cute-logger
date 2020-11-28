@@ -1,0 +1,46 @@
+{
+  "name": "egg-cute-logger",
+  "version": "1.0.0",
+  "description": "Support Egg Logger multiple transports (redis, amqp)",
+  "eggPlugin": {
+    "name": "cuteLogger"
+  },
+  "types": "index.d.ts",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-logger",
+    "redis-logger",
+    "amqp-logger",
+    "cute-logger"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wadezha/egg-cute-logger.git"
+  },
+  "author": "wadezha",
+  "license": "MIT"
+}
