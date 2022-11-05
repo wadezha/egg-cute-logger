@@ -1,6 +1,6 @@
 {
   "name": "egg-cute-logger",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Support Egg Logger multiple transports (redis, amqp)",
   "eggPlugin": {
     "name": "cuteLogger"

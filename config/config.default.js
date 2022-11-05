@@ -6,7 +6,7 @@ module.exports = appInfo => {
     const config = {};
     config.logger = {
         contextFormatter: function (meta) {
-            return JSON.stringify(LogFormat.getInstance(meta.ctx).format(meta));
+            return JSON.stringify(LogFormat.getInstance().format(meta));
         }
     };
     config.cuteLogger = {
@@ -14,6 +14,7 @@ module.exports = appInfo => {
         channel: 'log',
         ex: 'cute.logs',
         topic: 'cute.serve.log',
+        userKey: 'state.user.userIden'
     };
     return config;
 };

@@ -4,6 +4,7 @@ interface EggCuteLoggerOptions {
   channel?: string;
   ex?: string;
   topic?: string;
+  userKey?: string;
 }
 
 declare module 'egg' {
@@ -13,6 +14,6 @@ declare module 'egg' {
 }
 
 export declare class LogFormat {
-  static getInstance(meta?: any): LogFormat;
+  static getInstance(): LogFormat;
   format(meta?: object, name?: string): object;
 }
