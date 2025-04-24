@@ -27,5 +27,4 @@ module.exports = app => {
 
     app.logger.set('amqp', amqpTransport);
   }
-
 };
